@@ -25,11 +25,11 @@ repos:
       - id: trailing-whitespace
       # Проверяет (только) наличие конфликтов в регистре
       # в именах файлов. P.S. есть ОС чувствительные и не
-      # чувствительные к регистру, например myfile.txt и 
+      # чувствительные к регистру, например myfile.txt и
       # MyFile.txt могут быть как разными так и одинаковыми
       - id: check-case-conflict
       # Проверяет и исправляет наличие смешанных концов строк
-      # P.S. в разных ОС приняты разные символы для 
+      # P.S. в разных ОС приняты разные символы для
       # обозначения конца строки в текстовых файлвх
       - id: mixed-line-ending
 
@@ -72,7 +72,10 @@ repos:
     rev: v3.0.0-alpha.9-for-vscode
     hooks:
       - id: prettier
+        # Типы файлов, на которых должен выполняться хук
         types_or: [markdown, yaml, toml, json, shell]
         additional_dependencies:
+          # Дополнительные зависимости для хука prettier
           ["prettier@2.8.8", "prettier-plugin-sh@0.13.0-alpha.1"]
+        # Аргументы для команды prettier
         args: [--print-width=80, --prose-wrap=always]
