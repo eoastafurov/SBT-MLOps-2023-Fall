@@ -1,5 +1,0 @@
-outs:
-- md5: 0c98df4e3f1751c9de1175adc2ad9a9b
-  size: 12133
-  hash: md5
-  path: test-split.csv
