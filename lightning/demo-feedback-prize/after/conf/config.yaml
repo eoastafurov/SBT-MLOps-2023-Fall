@@ -47,9 +47,8 @@ artifacts:
     filename: "{epoch:02d}-{val_loss:.4f}"
     monitor: val_loss
     save_top_k: 3
-    every_n_train_steps: 
+    every_n_train_steps:
     every_n_epochs: 1
-
 
 callbacks:
   model_summary:
