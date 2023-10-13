@@ -1,7 +1,7 @@
 # Compiled object files
 *.o
 
-# Shared libraries (compiled C extensions)
+# Shared libraries
 *.so
 
 # Python cache files
@@ -16,3 +16,21 @@ build/
 
 # Jupyter Notebook files
 *.ipynb
+
+# Data
+*.csv
+*.parquet
+
+# Weights
+*.pth
+*.ckpt
+*.onnx
+*.plan
+
+# Stuff
+lightning/demo-feedback-prize/after/.logs/
+lightning/demo-feedback-prize/after/.hydra/
+lightning/demo-feedback-prize/after/checkpoints/
+lightning/demo-feedback-prize/after/outputs/
+lightning/demo-feedback-prize/after/wandb/
+lightning/demo-feedback-prize/before/outputs
